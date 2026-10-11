@@ -8,15 +8,28 @@ Brclio Auth 的公开服务介绍、隐私政策与服务条款。依据维护�
 
 | Google Auth Platform 字段 | 地址 |
 | --- | --- |
-| 应用首页 | https://brclio.github.io/brclio-legal/ |
-| 应用隐私权政策链接 | https://brclio.github.io/brclio-legal/privacy.html |
-| 应用服务条款链接 | https://brclio.github.io/brclio-legal/terms.html |
+| 应用首页 | https://pages.brclio.com/brclio-legal/ |
+| 应用隐私权政策链接 | https://pages.brclio.com/brclio-legal/privacy.html |
+| 应用服务条款链接 | https://pages.brclio.com/brclio-legal/terms.html |
 
 应用名称：`Brclio Auth`。支持邮箱：`aiyuechuang@gmail.com`。政策生效日期：2026-10-11。
 
-**域名一致性：** 上面的三个地址使用同一个 GitHub Pages 域名。若 OAuth 首页继续填写 `https://brclio.com`，应把本仓库页面部署到该首页所在域，例如 `https://brclio.com/privacy.html` 和 `https://brclio.com/terms.html`，并在该首页介绍 Brclio Auth、加入政策链接。示例的 brclio.com 政策路径不是本仓库已经发布的地址。
+**本应用的 OAuth 首页应填写上表的完整路径**，不要填写品牌站 `https://brclio.com` 或 Pages 根目录 `https://pages.brclio.com/`。Google 审核的是控制台所填首页；修改本仓库不会改变另一个网站的访问方式和内容。这个应用专用首页在静态 HTML 中直接提供中英文用途、登录流程、所需信息、维护方、联系邮箱和政策链接，无需登录或 JavaScript。
+
+**域名一致性：** 三个地址都在 `pages.brclio.com`，授权域名填写并验证 `brclio.com`。组织 Pages 已绑定该自有域名；原 `brclio.github.io` 地址会重定向，因此配置时直接使用上表的 HTTPS 地址。
 
 也可以为本仓库配置自有域名，并将 OAuth 的首页、隐私政策和条款地址一起改到该站点。需使用关联 Google Cloud 项目的 Owner/Editor 在 Google Search Console 验证相应域名。创建这两份文件不代表 Google 已验证应用或域名。
+
+## 品牌验证问题修复
+
+若 Google 提示“首页在登录页面之后显示”或“首页未说明应用用途”：
+
+1. 将品牌塑造 → 应用首页改为 `https://pages.brclio.com/brclio-legal/`，保存。
+2. 核对政策地址与上表一致，且应用名称为 `Brclio Auth`。
+3. 用未登录的浏览器直接访问这三个地址，确认介绍和全文可阅读。
+4. 在“查看问题”面板选择“我已解决相关问题”，重新运行品牌验证，以 Google 返回的最新状态为准。
+
+此改动无需修改 OAuth 客户端的回调地址、JavaScript 来源或登录凭据；不要将介绍页当作登录回调地址。
 
 ## Google 权限配置
 

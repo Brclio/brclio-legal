@@ -82,6 +82,34 @@ code { font: .87em/1.6 'SFMono-Regular', Consolas, monospace; overflow-wrap: any
 .document-link .arrow { color: var(--blue-deep); font-size: 26px; }
 .home-note { max-width: 760px; margin-bottom: 72px; color: var(--ink-light); }
 .home-note h2 { color: var(--ink); font-size: 23px; margin-bottom: 16px; }
+.home-hero { grid-template-columns: 1fr .40fr; align-items: start; }
+.home-hero h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.35; }
+.home-hero .app-name { display: block; font-family: 'Fraunces', Georgia, serif; font-size: clamp(1.6rem, 2.6vw, 2.2rem); color: var(--blue-deep); letter-spacing: -.03em; margin-bottom: 14px; }
+.purpose-english { max-width: 670px; margin-top: 16px; font-size: 14px; line-height: 1.75; color: var(--ink-light); }
+.policy-actions { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 24px; }
+.policy-actions a { font-size: 14px; font-weight: 500; }
+.policy-actions span { font-size: 12px; margin-left: 4px; }
+.app-facts { background: var(--cream-dark); padding: clamp(24px, 3vw, 36px); border-radius: 3px 24px 3px 3px; margin-top: 8px; }
+.app-facts dl { margin: 0; }
+.app-facts dl > div + div { margin-top: 20px; }
+.app-facts dt { color: var(--ink-light); font-size: 12px; }
+.app-facts dd { margin: 4px 0 0; font-size: 15px; font-weight: 500; }
+.app-facts dd a { font-size: 13px; }
+.summary .summary-note { margin-top: 14px; color: var(--ink-light); font-size: 14px; }
+.home-explainer { display: grid; grid-template-columns: .40fr 1fr; gap: clamp(32px, 6vw, 80px); padding-block: clamp(56px, 8vw, 96px); }
+.explainer-heading h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+.explainer-heading > p { color: var(--ink-light); font-size: 14px; margin-top: 14px; }
+.signin-steps { list-style: none; margin: 0; padding: 0; }
+.signin-steps li { display: grid; grid-template-columns: 44px 1fr; gap: 22px; padding-block: 24px; border-top: 1px solid var(--line); }
+.signin-steps h3 { font-size: 19px; margin-bottom: 8px; }
+.signin-steps p { color: var(--ink-light); font-size: 15px; }
+.step-number { color: var(--blue-deep); font: italic 28px/1.4 Georgia, serif; }
+.home-permissions { background: var(--cream-dark); padding: clamp(28px, 4vw, 48px); border-radius: 3px 24px 3px 3px; }
+.home-permissions .table-wrap { margin-bottom: 0; }
+.home-permissions .data-table th { background: var(--cream); }
+.permission-note { margin-top: 20px; font-size: 14px; color: var(--ink-light); }
+.document-link h2 span { display: inline-block; color: var(--blue-deep); font: italic 16px/1.6 Georgia, serif; margin-left: 10px; }
+.home-note p + p { margin-top: 14px; }
 @media (max-width: 900px) {
   .hero, .legal-layout { grid-template-columns: 1fr; gap: 32px; }
   .document-meta { display: flex; flex-wrap: wrap; gap: 16px 40px; }
@@ -90,6 +118,10 @@ code { font: .87em/1.6 'SFMono-Regular', Consolas, monospace; overflow-wrap: any
   .toc ol { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
   .hero-mark { justify-self: start; width: 140px; font-size: 100px; }
   .home-hero { grid-template-columns: 1fr auto; }
+  .home-hero, .home-explainer { grid-template-columns: 1fr; }
+  .app-facts { margin-top: 0; }
+  .app-facts dl { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .app-facts dl > div + div { margin-top: 0; }
 }
 @media (max-width: 600px) {
   .site-header { align-items: flex-start; flex-direction: column; justify-content: center; gap: 14px; padding-block: 22px; }
@@ -103,6 +135,8 @@ code { font: .87em/1.6 'SFMono-Regular', Consolas, monospace; overflow-wrap: any
   .document-link { grid-template-columns: 32px 1fr auto; gap: 16px; }
   .document-link .number { font-size: 28px; }
   .data-table th, .data-table td { padding: 12px 8px; }
+  .app-facts dl { grid-template-columns: 1fr; }
+  .document-link h2 span { display: block; margin-left: 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print {
