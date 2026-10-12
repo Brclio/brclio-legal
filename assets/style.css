@@ -18,9 +18,9 @@ h1, h2, h3 { font-family: 'Noto Serif SC', 'Songti SC', 'STSong', Georgia, serif
 .skip-link { position: absolute; top: -120px; left: 24px; padding: 12px 20px; background: var(--yellow); color: var(--ink); z-index: 5; }
 .skip-link:focus { top: 12px; }
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 98px; border-bottom: 1px solid var(--line); }
-.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); min-width: 0; }
-.brand-icon { display: grid; place-items: center; flex-shrink: 0; width: 40px; height: 40px; background: var(--blue); color: var(--cream); border-radius: 12px 12px 12px 3px; font: 700 28px/1 Georgia, serif; }
-.brand-name { font-size: clamp(16px, 1.5vw, 19px); font-weight: 700; letter-spacing: -.025em; line-height: 1.5; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+.brand-icon { display: grid; place-items: center; width: 40px; height: 40px; background: var(--blue); color: var(--cream); border-radius: 12px 12px 12px 3px; font: 700 28px/1 Georgia, serif; }
+.brand-name { font-size: 19px; font-weight: 700; letter-spacing: -.025em; }
 .brand-name small { display: block; color: var(--ink-light); font-size: 10px; font-weight: 500; letter-spacing: .14em; line-height: 1.2; }
 .top-nav { display: flex; flex-wrap: wrap; gap: 10px 28px; }
 .top-nav a { color: var(--ink-light); font-size: 14px; text-decoration: none; padding-block: 7px; }
@@ -70,6 +70,7 @@ code { font: .87em/1.6 'SFMono-Regular', Consolas, monospace; overflow-wrap: any
 .contact a:focus-visible { outline-color: var(--yellow); }
 .site-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px 28px; padding-block: 30px; color: var(--ink-light); font-size: 12px; }
 .site-footer a { color: var(--ink-light); }
+.home-hero { grid-template-columns: 1fr .38fr; align-items: center; }
 .hero-mark { display: grid; place-items: center; width: clamp(180px, 19vw, 250px); aspect-ratio: 1; border-radius: 50%; background: var(--yellow); color: var(--blue-deep); font: 900 clamp(110px, 13vw, 170px)/1 Georgia, serif; justify-self: end; position: relative; }
 .hero-mark::after { content: ''; position: absolute; width: 18px; height: 18px; border-radius: 50%; background: var(--red); right: 12%; bottom: 10%; }
 .home-links { margin-block: clamp(48px, 7vw, 88px); }
@@ -82,8 +83,8 @@ code { font: .87em/1.6 'SFMono-Regular', Consolas, monospace; overflow-wrap: any
 .home-note { max-width: 760px; margin-bottom: 72px; color: var(--ink-light); }
 .home-note h2 { color: var(--ink); font-size: 23px; margin-bottom: 16px; }
 .home-hero { grid-template-columns: 1fr .40fr; align-items: start; }
-.home-hero h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.35; text-wrap: balance; }
-.home-hero .title-part { display: inline-block; }
+.home-hero h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.35; }
+.home-hero .app-name { display: block; font-family: 'Fraunces', Georgia, serif; font-size: clamp(1.6rem, 2.6vw, 2.2rem); color: var(--blue-deep); letter-spacing: -.03em; margin-bottom: 14px; }
 .purpose-english { max-width: 670px; margin-top: 16px; font-size: 14px; line-height: 1.75; color: var(--ink-light); }
 .policy-actions { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 24px; }
 .policy-actions a { font-size: 14px; font-weight: 500; }
@@ -98,10 +99,6 @@ code { font: .87em/1.6 'SFMono-Regular', Consolas, monospace; overflow-wrap: any
 .home-explainer { display: grid; grid-template-columns: .40fr 1fr; gap: clamp(32px, 6vw, 80px); padding-block: clamp(56px, 8vw, 96px); }
 .explainer-heading h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); }
 .explainer-heading > p { color: var(--ink-light); font-size: 14px; margin-top: 14px; }
-.teaching-topics h3 { color: var(--blue-deep); font-size: 21px; margin-bottom: 10px; }
-.teaching-topics p { color: var(--ink-light); }
-.teaching-topics h3:not(:first-child) { margin-top: 28px; }
-.teaching-topics > .permission-note { padding-top: 20px; border-top: 1px solid var(--line); }
 .signin-steps { list-style: none; margin: 0; padding: 0; }
 .signin-steps li { display: grid; grid-template-columns: 44px 1fr; gap: 22px; padding-block: 24px; border-top: 1px solid var(--line); }
 .signin-steps h3 { font-size: 19px; margin-bottom: 8px; }
@@ -120,6 +117,7 @@ code { font: .87em/1.6 'SFMono-Regular', Consolas, monospace; overflow-wrap: any
   .toc { position: static; border-bottom: 1px solid var(--line); padding-bottom: 28px; }
   .toc ol { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
   .hero-mark { justify-self: start; width: 140px; font-size: 100px; }
+  .home-hero { grid-template-columns: 1fr auto; }
   .home-hero, .home-explainer { grid-template-columns: 1fr; }
   .app-facts { margin-top: 0; }
   .app-facts dl { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
