@@ -1,6 +1,6 @@
-# Brclio·AI·编程1v1辅导 · 政策页面
+# Brclio AI与编程一对一辅导
 
-Brclio·AI·编程1v1辅导 的公开应用介绍、隐私政策与服务条款。服务用途为**编程、AI、AIGC 与 Codex、Claude 等工具的一对一教学**；AI 是教学主题。Google 数据权限**仅用于基础账号登录**，不使用 Google Cloud、BigQuery、Vertex AI、Cloud Storage 等数据权限。
+Brclio AI与编程一对一辅导 的公开应用介绍、隐私政策与服务条款。服务用途为**编程、AI、AIGC 与 Codex、Claude 等工具的一对一教学**；AI 是教学主题。Google 数据权限**仅用于基础账号登录**，不使用 Google Cloud、BigQuery、Vertex AI、Cloud Storage 等数据权限。
 
 纯静态 HTML/CSS，无安装、构建或数据库依赖。正文直接包含在 HTML 中，无需 JavaScript 或登录即可阅读。页面支持手机、键盘导航、页内目录和打印。
 
@@ -12,7 +12,7 @@ Brclio·AI·编程1v1辅导 的公开应用介绍、隐私政策与服务条款�
 | 应用隐私权政策链接 | https://pages.brclio.com/brclio-legal/privacy.html |
 | 应用服务条款链接 | https://pages.brclio.com/brclio-legal/terms.html |
 
-应用名称：`Brclio·AI·编程1v1辅导`。支持邮箱：`aiyuechuang@gmail.com`。政策生效日期：2026-10-12。
+应用名称：`Brclio AI与编程一对一辅导`。支持邮箱：`aiyuechuang@gmail.com`。政策生效日期：2026-10-12。
 
 **本应用的 OAuth 首页应填写上表的完整路径**，不要填写品牌站 `https://brclio.com` 或 Pages 根目录 `https://pages.brclio.com/`。Google 审核的是控制台所填首页；修改本仓库不会改变另一个网站的访问方式和内容。这个应用专用首页在静态 HTML 中直接提供中英文用途、登录流程、所需信息、维护方、联系邮箱和政策链接，无需登录或 JavaScript。
 
@@ -25,7 +25,7 @@ Brclio·AI·编程1v1辅导 的公开应用介绍、隐私政策与服务条款�
 若改名后 Google 提示名称不一致、用途不足、隐私政策内容不足或首页不可公开读取：
 
 1. 将品牌塑造 → 应用首页改为 `https://pages.brclio.com/brclio-legal/`，保存。
-2. 核对政策地址与上表一致，且应用名称为 `Brclio·AI·编程1v1辅导`。
+2. 核对政策地址与上表一致，且应用名称为 `Brclio AI与编程一对一辅导`。
 3. 用未登录的浏览器直接访问这三个地址，确认介绍和全文可阅读。
 4. 在“查看问题”面板选择“我已解决相关问题”，重新运行品牌验证，以 Google 返回的最新状态为准；通过后发布新品牌草稿。
 

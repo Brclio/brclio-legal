@@ -82,7 +82,8 @@ code { font: .87em/1.6 'SFMono-Regular', Consolas, monospace; overflow-wrap: any
 .home-note { max-width: 760px; margin-bottom: 72px; color: var(--ink-light); }
 .home-note h2 { color: var(--ink); font-size: 23px; margin-bottom: 16px; }
 .home-hero { grid-template-columns: 1fr .40fr; align-items: start; }
-.home-hero h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.35; }
+.home-hero h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.35; text-wrap: balance; }
+.home-hero .title-part { display: inline-block; }
 .purpose-english { max-width: 670px; margin-top: 16px; font-size: 14px; line-height: 1.75; color: var(--ink-light); }
 .policy-actions { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 24px; }
 .policy-actions a { font-size: 14px; font-weight: 500; }
